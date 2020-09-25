@@ -1,0 +1,95 @@
+/*Variables*/
+
+:root {
+    /*Colours*/
+    --primary: ;
+    --secondary: ;
+    --light: #f0f0f0;
+    --dark: #2b2b2b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.wrapper {}
+
+
+/*Presets*/
+
+.full-width {
+    width: 100%;
+}
+
+a,
+a:active,
+.a:visited {
+    text-decoration: none;
+}
+
+
+/*End of presets*/
+
+
+/* Navbar */
+
+.navbar {
+    min-height: 15vh;
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+}
+
+.navbar .brand {
+    background-color: black;
+    color: white;
+}
+
+.navbar .brand,
+.navbar .links,
+.navbar .social {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.navbar .brand {
+    font-size: 2rem;
+}
+
+.navbar .links ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .links ul li {
+    list-style-type: none;
+    padding: 10px 30px;
+}
+
+.navbar .links ul li a {
+    color: var(--dark);
+    text-transform: capitalize;
+}
+
+.dropdown-tab {
+    width: 40%;
+    height: 50vh;
+    border: 1px solid red;
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+}
+
+ul li:hover div {
+    display: block;
+}

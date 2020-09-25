@@ -1,0 +1,26 @@
+.wrapper {
+    overflow-x: hidden;
+}
+
+@media (max-width: 1038px) {
+    .navbar .links {
+        width: 100%;
+        position: absolute;
+        top: 15vh;
+    }
+    .navbar .links ul {
+        display: block;
+        width: 100%;
+    }
+    .navbar .links ul li {
+        text-align: center;
+        border-top: 1px solid var(--light);
+        padding: 30px 0px;
+    }
+    .dropdown-tab {
+        width: 100%;
+    }
+    ul li:hover div {
+        position: relative;
+    }
+}

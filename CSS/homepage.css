@@ -1,12 +1,23 @@
+body,
 .wrapper {
     overflow-x: hidden;
 }
 
 @media (max-width: 1038px) {
+    .navbar {
+        min-height: 15vh;
+        display: grid;
+        grid-template-columns: 70px auto 200px;
+    }
+    .navbar .social {
+        background-color: black;
+        color: white;
+    }
     .navbar .links {
         width: 100%;
         position: absolute;
         top: 15vh;
+        transform: translateX(-100%);
     }
     .navbar .links ul {
         display: block;
@@ -22,5 +33,15 @@
     }
     ul li:hover div {
         position: relative;
+    }
+    .hamburger-container {
+        display: flex;
+        justify-content: right;
+    }
+    #hamburgeralt {
+        display: none;
+    }
+    .social a {
+        color: var(--light);
     }
 }

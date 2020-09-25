@@ -55,7 +55,8 @@ a:active,
 
 .navbar .brand,
 .navbar .links,
-.navbar .social {
+.navbar .social,
+.hamburger-container {
     display: flex;
     align-items: center;
     text-align: center;
@@ -88,8 +89,35 @@ a:active,
     position: absolute;
     display: none;
     margin-top: 10px;
+    z-index: 100;
 }
 
 ul li:hover div {
     display: block;
+}
+
+.hamburger-container {
+    display: none;
+    background-color: black;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger i {
+    color: white;
+    font-size: 2rem;
+}
+
+.social a {
+    font-size: 1.4rem;
+    color: var(--dark);
+    margin: 0px 7px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: orange;
+    transition: 0.3s;
 }

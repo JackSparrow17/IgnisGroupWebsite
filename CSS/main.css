@@ -51,6 +51,8 @@ a:active,
 .navbar .brand {
     background-color: black;
     color: white;
+    justify-content: center;
+    font-size: 1.8rem;
 }
 
 .navbar .brand,
@@ -61,10 +63,6 @@ a:active,
     align-items: center;
     text-align: center;
     padding: 0px 30px;
-}
-
-.navbar .brand {
-    font-size: 2rem;
 }
 
 .navbar .links ul {
@@ -80,10 +78,11 @@ a:active,
 .navbar .links ul li a {
     color: var(--dark);
     text-transform: capitalize;
+    font-size: 0.8rem;
 }
 
 .dropdown-tab {
-    width: 40%;
+    width: 47%;
     height: 50vh;
     border: 1px solid red;
     position: absolute;

@@ -121,3 +121,33 @@ ul li:hover div {
     color: orange;
     transition: 0.3s;
 }
+
+
+/*End of navbar*/
+
+
+/*Footer*/
+
+.footer {
+    background-color: black;
+    min-height: 13vh;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.footer .tab {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.footer .address,
+.footer .social {
+    display: none;
+    width: 100%;
+}
+
+
+/*End of footer */

@@ -8,7 +8,7 @@ body,
 
 .main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .main .left,
@@ -137,7 +137,30 @@ body,
 }
 
 @media (max-width: 1038px) {
+    .main {
+        width: 95%;
+        margin: 80px auto;
+    }
     .main .tab {
         min-height: 55vh;
+        margin: 15px 0px;
     }
+}
+
+@media (max-width: 800px) {
+    /*Footer*/
+    .footer .left .links {
+        text-align: center;
+        width: 100%;
+        padding: 20px 10px;
+        border-bottom: 2px solid orange;
+    }
+    .footer .right {
+        display: none;
+    }
+    .footer .address,
+    .footer .social {
+        display: flex;
+    }
+    /*End of footer */
 }

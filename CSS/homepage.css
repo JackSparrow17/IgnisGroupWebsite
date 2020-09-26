@@ -138,12 +138,10 @@ body,
 
 @media (max-width: 1038px) {
     .main {
-        width: 95%;
-        margin: 80px auto;
+        margin: auto;
     }
     .main .tab {
         min-height: 55vh;
-        margin: 15px 0px;
     }
 }
 

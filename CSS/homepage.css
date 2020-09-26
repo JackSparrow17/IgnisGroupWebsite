@@ -37,6 +37,39 @@ body,
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.7s;
+}
+
+.main .tab:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /*filter: blur(3px);*/
+    transition: 0.5s;
+}
+
+.main .tab .content .header {
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+
+.main .tab .content .caption {
+    display: none;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.main .tab:hover .header {
+    margin-top: -30px;
+    transition: 1s;
+    color: white;
+}
+
+.main .tab:hover .caption {
+    display: block;
+    color: white;
+    margin: 20px 0px;
 }
 
 

@@ -14,13 +14,11 @@ body,
 .main .left,
 .main .middle,
 .main .right {
-    border: 1px solid black;
     min-height: 85vh;
     display: grid;
 }
 
 .main .tab {
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;

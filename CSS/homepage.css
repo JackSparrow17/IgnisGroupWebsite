@@ -255,5 +255,12 @@ body,
     .footer .social {
         display: flex;
     }
+    .home-tab {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+    .home-tab .caption {
+        width: 100%;
+    }
     /*End of footer */
 }

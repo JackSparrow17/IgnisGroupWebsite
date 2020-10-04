@@ -101,24 +101,26 @@ a:active,
     text-decoration: underline;
     transition: 0.3s;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .dropdown-tab .part .header {
     border-bottom: 2px solid #ffd615;
     max-height: 30px;
     text-align: left;
+    margin: 30px 0px 5px 0px;
+    padding: 5px 0px;
 }
 
 .dropdown-tab .part .caption {
     line-height: 1.6;
     font-size: 0.8rem;
     text-align: left;
-    width: 100%;
+    width: 80%;
 }
 
 .home-tab {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
 }
 
 .services-tab {
@@ -129,6 +131,27 @@ a:active,
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
     padding: 5px;
+}
+
+.contacts-tab {
+    text-align: left;
+}
+
+.contacts-tab .header {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.contacts-tab .text {
+    margin: 20px 0px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.contacts-tab .text,
+.contacts-tab .header {
+    max-height: 20px;
 }
 
 ul li:hover div {

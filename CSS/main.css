@@ -45,7 +45,7 @@ a:active,
 .navbar {
     min-height: 15vh;
     display: grid;
-    grid-template-columns: 200px auto 200px;
+    grid-template-columns: auto 250px 200px;
 }
 
 .navbar .brand {
@@ -90,10 +90,28 @@ a:active,
     margin-top: 10px;
     z-index: 100;
     background-color: white;
+    padding: 60px 0px 0px 20px;
+}
+
+.home-tab {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.dropdown-tab .part .header {
+    border-bottom: 2px solid #ffd615;
+    max-height: 30px;
+    text-align: left;
+}
+
+.dropdown-tab .part .caption {
+    line-height: 1.6;
+    font-size: 0.8rem;
+    text-align: left;
+    width: 90%;
 }
 
 ul li:hover div {
-    display: block;
+    display: grid;
 }
 
 .hamburger-container {

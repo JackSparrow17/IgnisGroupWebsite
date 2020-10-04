@@ -232,6 +232,15 @@ body,
 }
 
 @media (max-width: 800px) {
+    /* .navbar {
+        position: fixed;
+    }
+    .main {
+        margin-top: 15vh;
+    }
+    .navbar .links {
+        overflow-y: auto;
+    }*/
     /*Footer*/
     .footer .left .links {
         text-align: center;

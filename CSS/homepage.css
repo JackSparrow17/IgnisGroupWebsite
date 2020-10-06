@@ -262,5 +262,8 @@ body,
     .home-tab .caption {
         width: 100%;
     }
+    .navbar .brand {
+        font-size: 1.3rem;
+    }
     /*End of footer */
 }

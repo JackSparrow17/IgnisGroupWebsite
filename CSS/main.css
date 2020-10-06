@@ -82,10 +82,10 @@ a:active,
 }
 
 .dropdown-tab {
-    width: 50%;
+    width: 55%;
     min-height: 50vh;
-    border: 1px solid red;
     position: absolute;
+    left: 0;
     display: none;
     margin-top: 10px;
     z-index: 100;
@@ -131,6 +131,10 @@ a:active,
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
     padding: 5px;
+}
+
+.gallery-tab img {
+    cursor: pointer;
 }
 
 .contacts-tab {
@@ -199,10 +203,23 @@ ul li:hover div {
 }
 
 .footer .tab {
-    color: white;
+    color: #808080;
     display: flex;
     align-items: center;
     padding: 20px 30px;
+}
+
+.footer a,
+.footer a:active,
+.footer a:visited {
+    color: #808080;
+    margin: 10px 0px;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: white;
+    transition: 0.3s;
 }
 
 .footer .address,

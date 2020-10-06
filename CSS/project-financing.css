@@ -1,0 +1,174 @@
+.wrapper {
+    margin: 0px auto;
+    width: 100%;
+}
+
+.navigation-bar {
+    background-color: #1b1b1b;
+    min-height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.navigation-bar .brand,
+.navigation-bar .links {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-bar .brand {
+    color: #ff6d24;
+    font-size: 0.9rem;
+    justify-content: center;
+}
+
+.navigation-bar .links {
+    text-align: left;
+}
+
+.navigation-bar a,
+.navigation-bar a:active,
+.navigation-bar a:visited {
+    color: #808080;
+    transition: 0.3s ease-in;
+    margin: 10px;
+}
+
+.navigation-bar a:hover {
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.banner {
+    min-height: 75vh;
+    background: linear-gradient( rgba(59, 41, 41, 0.5), rgba(0, 0, 0, 0.7)), url('../IMG/pig.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .content .caption,
+.banner .content .header {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.banner .content .header {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.banner .content .caption {
+    width: 50%;
+    color: #e9e9e9;
+    line-height: 1.6;
+}
+
+.banner .contact-no {
+    margin: 10px auto;
+    padding: 10px;
+    color: var(--light);
+    border: 2px solid var(--light);
+    border-radius: 4px;
+}
+
+.main {
+    background: #1b1b1b;
+    padding: 20px 0px;
+    margin: 0;
+}
+
+.main .header {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #ff6d24;
+    line-height: 100px;
+}
+
+.main .tabs {
+    padding: 30px;
+    width: 65%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.main .tabs .icon {
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+.main .tabs .icon img {
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+}
+
+.main .tabs .header {
+    text-align: left;
+    font-size: 1.4rem;
+    color: white;
+    text-transform: capitalize;
+    margin: 10px 0px;
+    padding: 20px 0px;
+    line-height: 0;
+}
+
+.main .tabs .caption {
+    line-height: 1.6;
+    color: #a8a8a8;
+}
+
+@media (max-width: 720px) {
+    .navigation-bar .brand,
+    .navigation-bar .links {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .navigation-bar {
+        padding: 10px;
+    }
+    .banner {
+        padding: 10px;
+    }
+    .banner .content .header {
+        font-size: 1.5rem;
+        margin: auto;
+        text-align: left;
+    }
+    .banner .content .caption {
+        width: 100%;
+        color: #e9e9e9;
+        line-height: 1.6;
+        text-align: left;
+    }
+    .banner .content p {
+        margin: 10px 0px;
+    }
+    .main .tabs {
+        padding: 10px;
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .main .tabs .tab {
+        margin: 20px 0px;
+    }
+    .main .tabs .tab .icon,
+    .main .tabs .tab .header,
+    .main .tabs .tab .caption {
+        margin: auto;
+        text-align: center;
+    }
+}
